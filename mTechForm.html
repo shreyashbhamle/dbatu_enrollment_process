@@ -1,0 +1,228 @@
+
+<!--Perform validation of all fields in assignment no.1 by using JavaScript-->
+<!DOCTYPE html>
+<html>
+    <!--Invisible Part-->
+    <head>
+        <title>M.Tech Student Registration Form</title>
+        <link rel="stylesheet" href="for.css">
+    </head>
+    <!--Visible Part-->
+    <body>
+        <legend>
+            <fieldset>
+                <h1 align="center">M.Tech Registration Form</h1>
+            
+        <hr>
+        <div class="container">
+            <form name="stdreg" action="mtechdbconnect.php" method="post">
+                <div>
+                    <div class="col-20">First year M.Tech. Course in <label></label></div>
+                    <div class="col-80"><input type="text" name="cour_name" placeholder="Enter your course name"></div>
+                </div>
+                <div class="sites">Q 1.
+                    <div class="row">
+                        <div class="col-20"><label>a) Name (As per S.S.C Certificate):</label></div>
+                        <div class="col-80"><input type="text" name="name" placeholder="Enter your Name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>b) Father Name</label></div>
+                        <div class="col-80"><input type="text" name="fathername" placeholder="Enter your Father Name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>c) Mother Name</label></div>
+                        <div class="col-80"><input type="text" name="mothername" placeholder="Enter your Mother Name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>d) Gender </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="gender" value="m">Male
+                            <input type="radio" name="gender" value="f">Female
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>e) Date of Birth</label></div>
+                        <div class="col-80"><input type="date" name="dob" placeholder="Enter your date of birth"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>f) Category:</label></div>
+                        <div class="col-80">1)<select name="caste">
+                            <option value="s">Select Class</option>
+                            <option value="o">Open</option>
+                            <option value="sc">SC</option>
+                            <option value="t">ST</option>
+                            <option value="v">VJ</option>
+                            <option value="d">DT</option>
+                            <option value="n1">NT1</option>
+                            <option value="n2">NT2</option>
+                            <option value="n3">NT3</option>
+                            <option value="sb">SBC</option>
+                            <option value="ob">OBC</option>
+                            </select></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label></label></div>
+                        <div class="col-80">2)<select name="handiOrexser">
+                            <option>Select Class</option>
+                            <option>physically Handicap</option>
+                            <option>Ex-Serviceman</option>
+                            
+                        </select></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Sponsored </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="sponsored" value="y">Yes
+                            <input type="radio" name="sponsored" value="n">No
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-20"><label>Valid GATE Score (If qualified)</label></div>
+                        <div class="col-80"><input type="text" name="gatescore" placeholder="Enter your Score"></div>
+                    </div>        
+                    <div class="row">
+                        <div class="col-20"><label>Score in M.Tech.CET</label></div>
+                        <div class="col-80"><input type="text" name="mtechcetscore" placeholder="Enter your Score"></div>
+                    </div>       
+                </div><br>
+
+                <div class="sites">Q 2.
+                    <div class="row">
+                        <div class="col-20"><label>Address for correspondence </label></div>
+                        <div class="col-80"><input type="text" name="address" placeholder="Enter your Address"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-20"><label>Pin code </label></div>
+                        <div class="col-80"><input type="text" name="pincode" placeholder="Enter your Pin Code"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Ph.No(with STD Code) </label></div>
+                        <div class="col-80"><input type="text" name="phonenostd" placeholder="Enter your Phone no "></div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-20"><label>Mob. no. </label></div>
+                        <div class="col-80"><input type="text" name="mobno" placeholder="Enter your Mobile no "></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Email </label></div>
+                        <div class="col-80"><input type="email" name="email" placeholder="Enter your email "></div>
+                    </div>    
+                </div>
+                <br>
+                 <br>
+                <div class="sites">Q 3.
+                    <div class="row">
+                        <div class="col-20"><label>Location </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="location" value="u">Urban
+                            <input type="radio" name="location" value="r">Rural
+                        </div>
+                    </div>   
+                </div>    
+                 <br>
+                 <br>
+                <div class="sites">Q 4. Details of Father / Mother / Guardian 
+                </br>
+                    <div class="row">
+                        <div class="col-20"><label>a) Domicile of Father / Mother /Guardian:</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="domfather" value="m">Maharashtra
+                            <input type="radio" name="domfather" value="o">Other state 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>b) Central / State Govt. Servant</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="govtServant" value="Yes">Yes
+                            <input type="radio" name="govtServant" value="No">No
+                        </div>
+                    </div>     
+                    <div class="row">
+                        <div class="col-20"><label>c) If yes , Organization in which working </label></div>
+                        <div class="col-80"><input type="text" name="organ" placeholder="Enter your Organization"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>d) If no , Mention the occupation Details</label></div>
+                        <div class="col-80"><input type="text" name="occu" placeholder="Enter your occupation"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>d) Do you belong to the Economically Backward Class?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="backclass" value="y">Yes
+                            <input type="radio" name="backclass" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>e) Total income of the guardian </label></div>
+                        <div class="col-80"><input type="text" name="income" placeholder="Enter the amount"></div>
+                    </div>
+                </div><br>
+                <br>
+                <div class="sites">Q 5. Permanent Address
+                    <div class="row">    
+                        <div class="col-20"><label>Address</label></div>
+                        <div class="col-80"><input type="text" name="perAdd" placeholder="Enter your Address"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-20"><label>Pin code </label></div>
+                        <div class="col-80"><input type="text" name="perPin" placeholder="Enter your Pin Code"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Phone no  </label></div>
+                        <div class="col-80"><input type="text" name="perPhone" placeholder="Enter your Phone no "></div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-20"><label>Mobile no. </label></div>
+                        <div class="col-80"><input type="text" name="perMob" placeholder="Enter your Mobile no "></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>E-mail </label></div>
+                        <div class="col-80"><input type="email" name="perEmail" placeholder="Enter your email "></div>
+                    </div>    
+                </div><br>
+                <br>
+                <div class="sites">Q 6. Details of B.E / B.Tech.Examination:
+                    <div class="row">    
+                        <div class="col-20"><label>a) Name of the University  </label></div>
+                        <div class="col-80"><input type="text" name="nameUni" placeholder="Enter university name"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-20"><label>b) Month and Year of passing</label></div>
+                        <div class="col-80"><input type="text" name="monthpass" placeholder="Enter Month and Year"></div>
+                    </div>
+                </div><br>
+                <br>
+                <div class="sites">Q 7. Are you eligible for any scholarship? If yes , state the category and name of the Scholarship
+                    <div class="row">    
+                        <div class="col-20"><label></label></div>
+                        <div class="col-80"><input type="text" name="scolarElig" placeholder="Enter Scholarship name"></div>
+                    </div>
+                </div><br>
+                <br>
+                <div class="sites">Q 8. State the Name of the last college / University / Institute attended by you and also the Date of Leaving 
+                    <div class="row">    
+                        <div class="col-20"><label></label></div>
+                        <div class="col-80"><input type="text" name="leavingClgname" placeholder="Enter university name"></div>
+                    </div>
+                </div>
+                <br>
+                 <br>
+                 <div class="submit" style="display: block; align-items: centers;" >
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                <div>
+                    <p>
+                         I hearby declare that al statements made in this application are true , complete 
+                         and correct to the best of my knowledge and belief . I understand that in event of
+                          any unformaton being found false at any stage or not satisfying the eligibility criteria 
+                          according to the requirements my candidature is liable to be cancelled / terminated.
+                        
+                    </p>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+    </legend>
+    </body>
+    <script src="validate.js"></script>
