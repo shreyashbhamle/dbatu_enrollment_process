@@ -1,0 +1,380 @@
+
+<!--Perform validation of all fields in assignment no.1 by using JavaScript-->
+<!DOCTYPE html>
+<html>
+    <!--Invisible Part-->
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="for.css">
+    </head>
+    <!--Visible Part-->
+    <body>
+        <h1 align="center">Registration Form</h1>
+        <hr>
+        <div class="container">
+            <form name="stdreg" action="dbconnect.php" method="post">
+                <fieldset>
+                    <legend>
+                        Admission Details
+                    </legend>
+                    <div class="row">
+                        <div class="col-20"><label>Admission Type</label></div>
+                        <div class="col-80"><input type="text" name="AdmissionType" placeholder="Regular or not "></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Choice Code</label></div>
+                        <div class="col-80"><input type="text" name="ChoiceCode" placeholder="Enter your choice code"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Institute Code</label></div>
+                        <div class="col-80"><input type="text" name="InstituteCode" placeholder="Enter your Institute code"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Region</label></div>
+                        <div class="col-80"><input type="text" name="Region" placeholder="Enter instiute region"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Course Code</label></div>
+                        <div class="col-80"><input type="text" name="CourseCode" placeholder="Enter your course code and name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Course Type</label></div>
+                        <div class="col-80"><input type="text" name="CourseType" placeholder="Enter your course type"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Course Year</label></div>
+                        <div class="col-80"><input type="text" name="CourseYear" placeholder="Enter course year "></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Aplication Status </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="AplicationStatus" value="a">Approved
+                            <input type="radio" name="AplicationStatus" value="p">Pending 
+                            <input type="radio" name="AplicationStatus" value="r">Rejected
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Payment State</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="PaymentState" value="d">Done
+                            <input type="radio" name="PaymentState" value="p">Pending 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Candidate's Name as per 10 th Passinng Certificate</label></div>
+                        <div class="col-80"><input type="text" name="CandidatesName" placeholder="Enter your name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Father / Husband First Name</label></div>
+                        <div class="col-80"><input type="text" name="fathername" placeholder="Enter your father / Husband Name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Mother Name</label></div>
+                        <div class="col-80"><input type="text" name="mothername" placeholder="Enter your Mother Name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Gender </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="gender" value="m">Male
+                            <input type="radio" name="gender" value="f">Female
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Date of Birth</label></div>
+                        <div class="col-80"><input type="date" name="DOB" placeholder="Enter your username"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Marrital Status</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="Marrital" value="s">Single
+                            <input type="radio" name="Marrital" value="m">Married
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Religion</label></div>
+                        <div class="col-80"><input type="text" name="religion" placeholder="Enter your religion"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Caste Category</label></div>
+                        <div class="col-80"><input type="text" name="caste" placeholder="Enter your caste"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Mobile no</label></div>
+                        <div class="col-80"><input type="text" name="mobileno" placeholder="Enter your Mobile no "></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Parent / Guardian Mobile</label></div>
+                        <div class="col-80"><input type="text" name="parentno" placeholder="Enter your Parent No"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Parent / Guardian Email</label></div>
+                        <div class="col-80"><input type="text" name="parentemail" placeholder="Enter your parent email"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Permanent Address</label></div>
+                        <div class="col-80"><input type="text" name="permanentAdd" placeholder="Enter your permant address"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Current Address</label></div>
+                        <div class="col-80"><input type="text" name="currentadd" placeholder="Enter your current address"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>DTE Application Id</label></div>
+                        <div class="col-80"><input type="text" name="dteid" placeholder="Enter your ID"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Higher Education</label></div>
+                        <div class="col-80"><input type="text" name="higheredu" placeholder="Enter your education"></div>
+                    </div><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend style="align-content: center;">ENTRANCE EXAM</legend>
+                    <div class="rowwise">
+                        
+                            <div class="col-20"><label></label></div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+    
+                        <div class="col-20"><label>Entrance Exam</label></div>
+                        <div class="col-80"><input type="text" name="entranceexam" placeholder="Enter entrance exam name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Entrance Exam Marks </label></div>
+                        <div class="col-80"><input type="text" name="entrancemarks" placeholder="Enter entrance exam marks"></div>
+                    </div>
+
+                
+                </fieldset>
+       
+                <br>
+                <fieldset>
+                    <legend>
+                        12 TH / H.S.C
+                    </legend>
+                    <div class="rowwise">
+                        <div class="col-20"><label></label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Board</label></div>
+                        <div class="col-80"><input type="text" name="hscboard" placeholder="Enter your hsc board name"></div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Passing Year</label></div>
+                        <div class="col-80"><input type="text" name="hscyear" placeholder="Enter passing year"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Total Marks </label></div>
+                        <div class="col-80"><input type="text" name="hscmark" placeholder="Enter your total marks"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Physics Marks</label></div>
+                        <div class="col-80"><input type="text" name="physicsmark" placeholder="Enter Physics marks"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Chemistry Marks</label></div>
+                        <div class="col-80"><input type="text" name="chemmarks" placeholder="Enter chemistry marks"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Mathematics Marks</label></div>
+                        <div class="col-80"><input type="text" name="mathmarks" placeholder="Enter maths marks"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>12th (HSC) Biology Marks</label></div>
+                        <div class="col-80"><input type="text" name="biomark" placeholder="Enter Biology marks"></div>
+                    </div>
+
+                </fieldset>
+                  <br><br>
+                <fieldset>
+                    <legend>TECHNICAL VOCATIONAL SUBJECTS </legend>
+                    <div class="rowwise">
+                        <div class="col-20"><label></label>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="col-20"><label>Technical Vocational Subject 1</label></div>
+                        <div class="col-80"><input type="text" name="techsub1" placeholder="Enter technical Subject name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Technical Vocational Subject 2</label></div>
+                        <div class="col-80"><input type="text" name="techsub2" placeholder="Enter technical Subject name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Technical Vocational Subject 3</label></div>
+                        <div class="col-80"><input type="text" name="techsub3" placeholder="Enter technical Subject name"></div>
+                    </div>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>
+                        10TH / S.S.C
+                    </legend>
+                    <div class="rowwise">
+                        <div class="col-20"><label></label>
+                        </div>
+                    </div><br>
+    
+                    <div class="row">
+                        <div class="col-20"><label>10th (S.S.C) Passing Year</label></div>
+                        <div class="col-80"><input type="text" name="sscyear" placeholder="Enter passing year"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>10th (S.S.C) Total Marks</label></div>
+                        <div class="col-80"><input type="text" name="sscmark" placeholder="Enter total ssc marks"></div>
+                    </div>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>
+                        Personal Information
+                    </legend><br>
+                    <div class="row">
+                        <div class="col-20"><label>Candidature Type</label></div>
+                        <div class="col-80"><input type="text" name="candtype" placeholder="Enter candidate type"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is family income more than 8 lakhs per annum?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="income" value="y">Yes
+                            <input type="radio" name="income" value="n">No
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate eligible for scholarship?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="scholar" value="y">Yes
+                            <input type="radio" name="scholar" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Type of Scholarship</label></div>
+                        <div class="col-80"><input type="text" name="typescholar" placeholder="Enter Scholarship type"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate physically handicap?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="handicap" value="y">Yes
+                            <input type="radio" name="handicap" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate linguistic actionminority?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="linguistic" value="y">No
+                            <input type="radio" name="linguistic" value="n">Yes
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Has canididate completed educaton from North-Eastern States?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="northedu" value="y">Yes
+                            <input type="radio" name="northedu" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate a Jammu & Kashmir migrant? </label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="jammukash" value="Yes">Yes
+                            <input type="radio" name="jammukash" value="No">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is Candidate project affected?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="projectaffect" value="y">Yes
+                            <input type="radio" name="projectaffect" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Whether guardian of the candidate is ex-serviceman?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="exserviceman" value="y">Yes
+                            <input type="radio" name="exserviceman" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate state level player in sports?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="statelevelplayer" value="y">Yes
+                            <input type="radio" name="statelevelplayer" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate national level player in sports?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="nationalplayer" value="y">Yes
+                            <input type="radio" name="nationalplayer" value="n">No
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-20"><label>Is candidate widow / divorce / orphan woman?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="widoworphan" value="y">Yes
+                            <input type="radio" name="widoworphan" value="n">No
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Do you have passport?</label></div>
+                        <div class="col-80">                        
+                            <input type="radio" name="passport" value="y">Yes
+                            <input type="radio" name="passport" value="n">No
+                        </div>
+                    </div>
+                </fieldset><br><br>
+                <fieldset>
+                    <legend>
+                        Bank Account type 
+                    </legend><br>
+    
+                    <div class="row">
+                        <div class="col-20"><label>Bank Account NUmber</label></div>
+                        <div class="col-80"><input type="text" name="bankacno" placeholder="Enter Bank account no"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Account Holder's Name</label></div>
+                        <div class="col-80"><input type="text" name="bankholdername" placeholder="Enter your holder name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Bank Name</label></div>
+                        <div class="col-80"><input type="text" name="bankname" placeholder="Enter your bank name"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>Bank Account Type</label></div>
+                        <div class="col-80"><input type="text" name="bankactype" placeholder="Enter your bank ac type"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-20"><label>IFSC Code</label></div>
+                        <div class="col-80"><input type="text" name="ifsccode" placeholder="Enter your ifsc code"></div>
+                    </div>
+                    
+                    
+                </fieldset>
+
+               
+                <br>
+              
+                <div class="submit" style="display: block;" >
+                    <input type="submit" value="Submit" >
+                    <input type="reset" value="Reset">
+                </div>
+                <div>
+                    <p>
+                         I hearby declare that al statements made in this application are true , complete 
+                         and correct to the best of my knowledge and belief . I understand that in event of
+                          any unformaton being found false at any stage or not satisfying the eligibility criteria 
+                          according to the requirements my candidature is liable to be cancelled / terminated.
+                        <div>
+                            <input type="img" name="Sign" placeholder="Sign here"> 
+                        </div>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="validate.js"></script>
